@@ -1,0 +1,40 @@
+* {margin: 0; padding: 0}
+
+html {
+  font-family: 'Playfair Display', serif;
+}
+
+#page-title {
+  text-align: center;
+  padding: 50px;
+  font-weight: 400;
+}
+
+
+.container {
+  width: max-content;
+  max-width: 1000px;
+  background: lightpink;
+  /* margin: 0 auto; */
+  margin: 0 auto 0 auto;
+
+  /* TRBL // "TROUBLE" */
+  /* Top, Right, Bottom, Left */
+  /* margin-top: 0;
+  margin-right: auto;
+  margin-bottom: 0;
+  margin-left: auto; */
+
+
+  /* position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%); */
+}
+
+/* images by default are: display: inline-block */
+.container img {
+  width: 300px;
+  margin: 30px;
+  display: block;
+}
