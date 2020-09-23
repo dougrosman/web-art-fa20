@@ -1,0 +1,8 @@
+.wrapper {
+  width: 100vw;
+  height: 100vh;
+  background: gray;
+}
+.wrapper:hover {
+  cursor: url("horse-32.png"), default;
+}
