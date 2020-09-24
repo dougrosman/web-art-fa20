@@ -1,0 +1,36 @@
+.box {
+  width: 100px;
+  height: 100px;
+  background: lime;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  animation-name: grow;
+  animation-duration: 25s;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: cubic-bezier(1,.16,.24,1.4);
+  animation-fill-mode: forwards;
+}
+
+
+
+@keyframes grow {
+
+  from {
+    width: 100px;
+    height: 100px;
+    left: 0px;
+    top: 0px;
+    background: lime;
+  }
+
+  to {
+    width: 200px;
+    height: 400px;
+    top: 100px;
+    left: 400px;
+    background: rebeccapurple;
+  }
+}
