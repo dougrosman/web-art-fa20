@@ -1,0 +1,41 @@
+* {margin: 0; padding: 0;}
+
+#cool {
+  font-family: Arial;
+  /* position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%); */
+  text-align: center;
+  animation-name: alert;
+  animation-duration: 3s;
+  /* animation-iteration-count: infinite; */
+  animation-delay: 0s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease;
+  display: inline-block;
+}
+
+
+@keyframes alert {
+
+  0% {
+    /* transform: scale(1); */
+    font-size: 16px;
+  }
+
+  50% {
+    /* transform: scale(20); */
+    font-size: 200px;
+  }
+
+  60% {
+    /* transform: scale(20); */
+  }
+
+  100% {
+    transform: rotateZ(360deg) rotateY(1080deg) rotateX(180deg);
+  }
+
+
+}
