@@ -6,11 +6,11 @@
   top: 0px;
   left: 0px;
   animation-name: grow;
-  animation-duration: 25s;
+  animation-duration: 3s;
   animation-delay: 0s;
   animation-iteration-count: infinite;
   animation-direction: alternate;
-  animation-timing-function: cubic-bezier(1,.16,.24,1.4);
+  animation-timing-function: cubic-bezier(1,.16,.24,1.0);
   animation-fill-mode: forwards;
 }
 
@@ -18,19 +18,39 @@
 
 @keyframes grow {
 
-  from {
+  0% {
     width: 100px;
     height: 100px;
     left: 0px;
     top: 0px;
     background: lime;
+    border-radius: 0px;
   }
 
-  to {
-    width: 200px;
+  50% {
+    width: 100px;
+    height: 600px;
+    left: 0px;
+    top: 0px;
+    background: orangered;
+    border-radius: 30px;
+
+  }
+
+  /* 90% {
+    width: 100px;
+    height: 600px;
+    left: 0px;
+    top: 0px;
+    background: orangered;
+  } */
+
+  100% {
+    width: 400px;
     height: 400px;
     top: 100px;
     left: 400px;
     background: rebeccapurple;
+    border-radius: 50px;
   }
 }
