@@ -1,20 +1,88 @@
 * {margin: 0; padding: 0;}
 
+
 #cool {
   font-family: Arial;
-  /* position: absolute;
+  position: absolute;
   left: 50%;
   top: 50%;
-  transform: translate(-50%, -50%); */
+  transform: translate(-50%, -50%);
   text-align: center;
   animation-name: alert;
   animation-duration: 3s;
-  /* animation-iteration-count: infinite; */
+  animation-iteration-count: infinite;
   animation-delay: 0s;
   animation-fill-mode: forwards;
   animation-timing-function: ease;
   display: inline-block;
 }
+
+.wrapper {
+  width: 100vw;
+  height: 100vh;
+  background: skyblue;
+
+  animation-name: bg;
+  animation-duration: 2s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  animation-name: grow;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  background: orange;
+}
+
+.box::after {
+  content:"";
+  display: block;
+  width: 20px;
+  height: 20px;
+  background: green;
+  font-size: 20px;
+  animation-name: grow;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes grow {
+  0% {
+    width: 20%;
+  }
+  100% {
+    width: 60%;
+  }
+}
+
+@keyframes changeColor {
+  0% {
+    color:red;
+  }
+  100% {
+    color: blue;
+  }
+}
+
+@keyframes box {
+  0% { width: 100px; height: 100px;}
+  100% { width: 200px; height: 200px;}
+}
+
+
+@keyframes bg {
+  0% {
+    background: skyblue;
+  }
+
+  100% {
+    background: lightyellow;
+  }
+}
+
 
 
 @keyframes alert {
@@ -36,6 +104,5 @@
   100% {
     transform: rotateZ(360deg) rotateY(1080deg) rotateX(180deg);
   }
-
 
 }
