@@ -4,13 +4,16 @@ body {
     background-color: cadetblue;
 }
 
+header {
+    width: 800px;
+}
+
 .container {
     background-size: cover;
-    width: 50vw;
+    width: 50%;
     height: 30vw;
     position: relative;
-    left: 25%;
-    margin: 100px 0;
+    margin: 100px auto;
 }
 
 .container::before {

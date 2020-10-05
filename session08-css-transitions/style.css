@@ -1,0 +1,62 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/*
+    font-family: 'Bad Script', cursive;
+
+    font-family: 'VT323', monospace;
+*/
+
+:root {
+  scrollbar-color: green blue;
+  scrollbar-width: thin !important;
+}
+
+body::-webkit-scrollbar-track {
+  background: blue;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: orangered;
+}
+
+html {
+  font-family: 'VT323', monospace;
+}
+
+
+
+body {
+  max-height: 100vh;
+}
+
+header {
+  width: clamp(200px, 30vw, 400px);
+  height: 100vh;
+  overflow-y: scroll;
+
+
+}
+
+.sidebar-navigation {
+  background: #00aef3;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  
+}
+
+.sidebar-navigation a {
+  color: seagreen;
+  text-decoration: none;
+  background: orangered;
+  margin: 10px 0;
+}
+
+.sidebar-navigation a:hover {
+  background: black;
+  color: lime;
+}
