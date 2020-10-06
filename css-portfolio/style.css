@@ -26,3 +26,13 @@ header h1 {
   height: 100vh;
   margin: 0 auto;
 }
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.gallery__item {
+  margin: 2vmin;
+}
