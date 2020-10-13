@@ -34,5 +34,65 @@ header h1 {
 }
 
 .gallery__item {
-  margin: 2vmin;
+  width: 200px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
+
+#media-queries {
+  background-image: url("//picsum.photos/200/200")
+}
+
+#background-images {
+  background-image: url("//picsum.photos/200/200")
+}
+
+
+/* .gallery__item > * {
+  border-radius: 2vmin;
+}
+
+.gallery__item {
+  margin: 2vmin;
+  position: relative;
+  border-radius: 2vmin;
+}
+
+.gallery__item:hover {
+  cursor: url(cursors/thumbs_128.png), auto;
+}
+
+.gallery__img {
+  display: block;
+}
+
+.gallery__item .caption {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: #000a;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background .5s,
+              font-size .25s;
+}
+
+.gallery__item:hover .caption {
+  background: #0002;
+  font-size: 1.2rem;
+}
+
+ */
+
