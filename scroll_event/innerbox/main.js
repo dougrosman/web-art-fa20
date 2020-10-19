@@ -6,7 +6,6 @@ $(document).ready(function(){
   let w = 5 + Math.random()*10;;
   let h = 5 + Math.random()*10;;
   
-  
 
   $(document).on('wheel', function() {
     // console.log('Scrolled to ' + $(this).scrollTop());

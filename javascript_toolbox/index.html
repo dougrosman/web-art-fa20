@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Note: Import JavaScript libraries in the head section of your HTML file -->
+  <script src="libraries/jquery-3.5.1.min.js"></script>
+  <script src="libraries/p5.min.js"></script>
+
+  <!-- Note: Import CSS stylesheets and external fonts in the head section of your HTML file -->
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap" rel="stylesheet"> 
+
+  <title>Javascript Toolbox</title>
+</head>
+<body>
+  <div class="wrapper">
+    <header>
+      <h1 class="title">JavaScript Toolbox</h1>
+    </header>
+    <main>
+      <section>
+        <h2>Event Listeners</h2>
+        <h4>on('click')</h4>
+        <div id="click-me" class="demo-area">
+          <div id="click-me__box" class="box">Click Me</div>
+          <p id="click-me__text">Ya did it, you clicked the box! <br><br> Now, click me to change the background color of the box</p> 
+        </div>
+        <div id="click-animate" class="demo-area">
+          <div id="click-animate__box" class="box">Click me to animate</div>
+          <p id="click-animate__text">Clicking the box will add a CSS class to the box. The class uses a CSS animation.</p> 
+        </div>
+        
+      </section>
+
+      <section>
+        <h2>Timing Events</h2>
+        <h4>setInterval()</h4>
+        <div id="set-interval" class="demo-area">
+          <div id="set-interval__box" class="box">0</div>
+          <p id="set-interval__text">The text in this box has been set to count up every quarter second</p> 
+        </div>
+
+        <h4>setTimeout()</h4>
+        <div id="set-timeout" class="demo-area">
+          <div id="set-timeout__box" class="box">waiting...</div>
+          <p id="set-timeout__text">The text in this box won't appear until the page has been loaded for 5 seconds</p> 
+        </div>
+      </section>
+
+      
+
+      <div id="scroll-info">
+        <p>Current scroll location:
+          <span id="scroll-info__position">0</span> ||
+        </p>
+        <p>You've scrolled
+          <span id="scroll-info__amount">0</span>
+          times
+        </p>
+      </div>
+    </main>
+  </div>
+
+
+
+
+  <!-- Note: Import JavaScript files that you write at the bottom of your body section -->
+  <script src="main.js"></script>
+  <script src="libraries/utils.js"></script>
+</body>
+</html>

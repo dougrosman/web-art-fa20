@@ -1,0 +1,124 @@
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* You can define custom CSS variables. This makes certain things easier with JavaScript, like toggling between a light and dark mode */
+:root {
+  --bg-color: #fff;
+  --fg-color: #000;
+  font-size: clamp(2px, 6vmin, 18px);
+}
+
+body {
+  font-family: 'Inconsolata', monospace;
+  background: var(--bg-color);
+  color: var(--fg-color);
+}
+
+.wrapper {
+  margin: 0 auto;
+  max-width: 1440px;
+}
+
+.wrapper > * {
+  margin: 1em;
+  padding: 1em;
+}
+
+header {
+  border: 2px solid lightgreen;
+}
+
+.title {
+  font-weight: 300;
+}
+
+main {
+  border: 2px solid violet;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+section {
+  border: 2px solid orangered;
+  flex: 2 1 46%;
+  margin: 1em;
+  padding: 1em;
+  height: max-content;
+}
+
+section > * {
+  margin-bottom: 1em;
+}
+
+.demo-area {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em;
+  border: 2px dashed blue;
+}
+
+.box {
+  font-size: 1rem;
+  font-weight: 550;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.box::after {
+  content: '';
+  display: block;
+  padding: 50% 0;
+}
+
+.demo-area > * {
+  margin: 0 .5em;
+  width: 40%;
+}
+
+#click-me__box { background: lightpink; }
+#click-me__box:hover, #click-me__text:hover {
+  cursor: pointer;
+}
+#click-animate__box { background: lightpink; }
+#click-animate__box:hover {
+  cursor: pointer;
+}
+#set-interval__box { background: lightgreen; }
+#set-timeout__box { background: lightgreen; }
+
+.rotate {
+  animation-name: rotate;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes rotate {
+  from {transform: rotateY(0deg);}
+  to {transform: rotateY(360deg);}
+}
+
+#scroll-info {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  background: #fff;
+  padding: .5em;
+}
+
+#scroll-info > * {
+  display: inline-block;
+}
+
+#scroll-info:hover {
+  background: #000f;
+  color: #fff;
+}
+
