@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="../libs/jquery-3.5.1.min.js"></script>
+  <title>three.js Demo</title>
+</head>
+<body>
+  <div class="info-toggle">i</div>
+  <div class="info">
+    <p>Click and drag to move the scene around. Clicking and dragging is possible with <a href="https://threejs.org/docs/#examples/en/controls/OrbitControls" target="_blank">Orbit Controls</a></p>
+    <br>
+    <p>Hover over the boxes to change their color. Click them to toggle their color. Selecting individual objects is possible with a <a href="https://threejs.org/docs/#api/en/core/Raycaster" target="_blank">Raycaster</a></p>
+  </div>
+  
+  <div id="scene-container"></div>
+  
+
+  <!--Don't import utils.js!-->
+  <script src="utils.js"></script>
+  <script type="module" src="main.js"></script>
+</body>
+</html>

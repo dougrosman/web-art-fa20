@@ -1,0 +1,16 @@
+body {
+  font-family: Arial;
+}
+
+.alert {
+  position: absolute;
+  width: 300px;
+  height: 200px;
+  background: lightgray;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  border: 1px solid black;
+  border-radius: 3px;
+}
